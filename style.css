@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pageBackground {
+    width: 100vw;
+    height: 100vh;
+    background: red;
+}
+
+#topSection {
+    width: 100vw;
+    height: 20vh;
+    background: green;
+}
+
+#middleSection {
+    width: 100vw;
+    height: 60vh;
+    background: blue;
+}
+
+#bottomSection {
+    width: 100vw;
+    height: 20vh;
+    background: yellow;
+}
