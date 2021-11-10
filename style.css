@@ -10,17 +10,58 @@
     background: red;
 }
 
+
+/* TOP SECTION STYLING */
+
 #topSection {
+    display: flex;
+    justify-content: space-between;
     width: 100vw;
     height: 20vh;
     background: green;
 }
+
+#topLeft {
+    position: relative;
+    top: 10%;
+    left: 5%;
+    width: 10%;
+    height: 75%;
+    background-color: red;
+}
+
+#topMiddle {
+    position: relative;
+    top: 10%;
+    width: 30%;
+    height: 75%;
+    background-color: hotpink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#topRight {
+    position: relative;
+    top: 10%;
+    right: 5%;
+    width: 10%;
+    height: 75%;
+    background-color: red;
+}
+
+
+/* MIDDLE SECTION STYLING */
 
 #middleSection {
     width: 100vw;
     height: 60vh;
     background: blue;
 }
+
+
+/* BOTTOM SECTION STYLING */
 
 #bottomSection {
     width: 100vw;
