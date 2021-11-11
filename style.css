@@ -11,6 +11,7 @@
 }
 
 
+
 /* TOP SECTION STYLING */
 
 #topSection {
@@ -24,7 +25,7 @@
 #topLeft {
     position: relative;
     top: 10%;
-    left: 5%;
+    left: 12%;
     width: 10%;
     height: 75%;
     background-color: red;
@@ -45,7 +46,7 @@
 #topRight {
     position: relative;
     top: 10%;
-    right: 5%;
+    right: 12%;
     width: 10%;
     height: 75%;
     background-color: red;
@@ -58,7 +59,42 @@
     width: 100vw;
     height: 60vh;
     background: blue;
+    line-height: 4em;
 }
+
+#teamLogoLeft {
+    width: 85%;
+    height: 70%;
+    background: coral;
+    position: relative;
+    left: 5%;
+    top: 12%;
+}
+
+#teamLogoRight {
+    width: 85%;
+    height: 70%;
+    background: coral;
+    position: relative;
+    top: 12%;
+    right: -10%;
+}
+
+#statContainer {
+    display: flex;
+    width: 97vw;
+    height: 90%;
+    margin: auto;
+    position: relative;
+    top: 5%;
+    align-items: center;
+    justify-content: space-around;
+    background: chartreuse;
+}
+
+
+
+
 
 
 /* BOTTOM SECTION STYLING */
@@ -67,4 +103,31 @@
     width: 100vw;
     height: 20vh;
     background: yellow;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+
+}
+
+#bottomLeft {   
+    width: 30%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    background: cornflowerblue;
+}
+
+#bottomMiddle {
+    width: 30%;
+    position: relative;
+    top: 45%;
+    text-align: center;
+}
+
+#bottomRight {
+    width: 30%;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    background: cornflowerblue;
 }
