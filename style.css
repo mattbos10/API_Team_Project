@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pageBackground {
+  width: 100vw;
+  height: 100vh;
+  background: red;
+}
+
+
+
+/* TOP SECTION STYLING */
+
+#topSection {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 40vh;
+  background: green;
+}
+
+#topLeft {
+  position: relative;
+  top: 10%;
+  left: 12%;
+  width: 10%;
+  height: 75%;
+  background-color: red;
+}
+
+#topMiddle {
+  position: relative;
+  top: 10%;
+  width: 30%;
+  height: 75%;
+  background-color: hotpink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#topRight {
+  position: relative;
+  top: 10%;
+  right: 12%;
+  width: 10%;
+  height: 75%;
+  /* background-color: red; */
+}
+
+
+/* MIDDLE SECTION STYLING */
+
+#middleSection {
+  width: 100vw;
+  height: 40vh;
+  background: blue;
+  line-height: 4em;
+}
+
+#teamLogoLeft {
+  width: 85%;
+  height: 70%;
+  background: coral;
+  position: relative;
+  left: 5%;
+  top: 12%;
+}
+
+#teamLogoRight {
+  width: 85%;
+  height: 70%;
+  background: coral;
+  position: relative;
+  top: 12%;
+  right: -10%;
+}
+
+#statContainer {
+  display: flex;
+  width: 97vw;
+  height: 90%;
+  margin: auto;
+  position: relative;
+  top: 5%;
+  align-items: center;
+  justify-content: space-around;
+  background: chartreuse;
+}
+
+
+
+
+
+
+/* BOTTOM SECTION STYLING */
+
+#bottomSection {
+  width: 100vw;
+  height: 20vh;
+  background: yellow;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+
+#bottomLeft {   
+  width: 30%;
+  height: 80%;
+  position: relative;
+  top: 10%;
+  background: cornflowerblue;
+}
+
+#bottomMiddle {
+  width: 30%;
+  position: relative;
+  top: 45%;
+  text-align: center;
+}
+
+#bottomRight {
+  width: 30%;
+  height: 80%;
+  position: relative;
+  top: 10%;
+  background: cornflowerblue;
+}
+
+/* Carousel Styling for Multi-Teams*/
+body {
+background: #333;
+padding: 70px 0;
+font: 15px/20px Arial, sans-serif;
+}
+
+.container {
+margin: 0 auto;
+width: 250px;
+height: 200px;
+position: relative;
+perspective: 1000px;
+}
+
+.carousel {
+height: 100%;
+width: 100%;
+position: absolute;
+transform-style: preserve-3d;
+transition: transform 1s;
+}
+
+.item {
+display: block;
+position: absolute;
+background: #000;
+width: 250px;
+height: 200px;
+line-height: 200px;
+font-size: 5em;
+text-align: center;
+color: #FFF;
+opacity: 0.95;
+border-radius: 10px;
+}
+
+.packers {
+transform: rotateY(0deg) translateZ(250px);
+background: #203731;
+}
+.vikings {
+transform: rotateY(72deg) translateZ(250px);
+background: #4F2683;;
+}
+.lions{
+transform: rotateY(144deg) translateZ(250px);
+background: #0076B6;
+}
+.colts {
+transform: rotateY(216deg) translateZ(250px);
+background: #002C5F;
+}
+.eagles {
+transform: rotateY(288deg) translateZ(250px);
+background: #004C54;
+} 
+.bears {
+transform: rotateY(360deg) translateZ(250px);
+background: #0B162A;
+}
+
+.next, .prev {
+color: #444;
+position: absolute;
+top: 200px;
+padding: 1em 2em;
+cursor: pointer;
+background: #CCC;
+border-radius: 5px;
+border-top: 1px solid #FFF;
+box-shadow: 0 5px 0 #999;
+transition: box-shadow 0.1s, top 0.1s;
+}
+.next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+top: 204px;
+box-shadow: 0 1px 0 #999;
+}
+.next { right: 1em; }
+.prev { left: 10em; }
+
+/* Carousel Styling for Bears/
+
