@@ -49,7 +49,7 @@ goTransformPage.addEventListener(`click`, () => {
       try {
           const teamBears = await axios.get(fullEndpointTeam + idBears);
           console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
-          console.log(teamBears.data);
+          console.log(teamBears.data); 
           teamNameLeft.src = teamBears.data.teams[0].strTeamLogo;
        } catch (err) {
           console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
@@ -69,8 +69,8 @@ goPackers.addEventListener(`click`, () => {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
                 console.log(teamPackers.data);
                 firstStat.innerText=teamPackers.data.teams[0].strTeam;
-                secondStat.innerText=teamPackers.data.teams[0].strStadium;
-                thirdStat.innerText=teamPackers.data.teams[0].strStadiumLocation;
+                secondStat.innerText=teamPackers.data.teams[0].strStadiumLocation;
+                thirdStat.innerText=teamPackers.data.teams[0].strStadium;
                 fourthStat.innerText=`Highest in the NFC North (nfl.com)`;
                 fifthStat.innerText=`Or filled in by us will work too`;
                 betterBecause.innerText= `The ${idPackers} are better than the Chicago Bears.`;
@@ -91,8 +91,8 @@ goVikings.addEventListener(`click`, () => {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
                 console.log(teamVikings.data);
                 firstStat.innerText=teamVikings.data.teams[0].strTeam;
-                secondStat.innerText=teamVikings.data.teams[0].strStadium;
-                thirdStat.innerText=teamVikings.data.teams[0].strStadiumLocation;
+                secondStat.innerText=teamVikings.data.teams[0].strStadiumLocation;
+                thirdStat.innerText=teamVikings.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the NFC North (nfl.com)`;
                 fifthStat.innerText=`Or filled in by us will work too`;
                 betterBecause.innerText= `The ${idVikings} are better than the Chicago Bears.`;
@@ -113,8 +113,8 @@ goLions.addEventListener(`click`, () => {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
                 console.log(teamLions.data);
                 firstStat.innerText=teamLions.data.teams[0].strTeam;
-                secondStat.innerText=teamLions.data.teams[0].strStadium;
-                thirdStat.innerText=teamLions.data.teams[0].strStadiumLocation;
+                secondStat.innerText=teamLions.data.teams[0].strStadiumLocation;
+                thirdStat.innerText=teamLions.data.teams[0].strStadium;
                 fourthStat.innerText=`Last in the NFC North (nfl.com)`;
                 fifthStat.innerText=`Or filled in by us will work too`;
                 betterBecause.innerText= `The ${idLions} are worse than the Chicago Bears. That's pretty bad.`;
@@ -135,8 +135,8 @@ goColts.addEventListener(`click`, () => {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
                 console.log(teamColts.data);
                 firstStat.innerText=teamColts.data.teams[0].strTeam;
-                secondStat.innerText=teamColts.data.teams[0].strStadium;
-                thirdStat.innerText=teamColts.data.teams[0].strStadiumLocation;
+                secondStat.innerText=teamColts.data.teams[0].strStadiumLocation;
+                thirdStat.innerText=teamColts.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the AFC South (nfl.com)`;
                 fifthStat.innerText=`Or filled in by us will work too`;
                 betterBecause.innerText= `The ${idColts} are better than the Chicago Bears.`;
@@ -157,8 +157,8 @@ goEagles.addEventListener(`click`, () => {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
                 console.log(teamEagles.data);
                 firstStat.innerText=teamEagles.data.teams[0].strTeam;
-                secondStat.innerText=teamEagles.data.teams[0].strStadium;
-                thirdStat.innerText=teamEagles.data.teams[0].strStadiumLocation;
+                secondStat.innerText=teamEagles.data.teams[0].strStadiumLocation;
+                thirdStat.innerText=teamEagles.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the NFC East (nfl.com)`;
                 fifthStat.innerText=`Or filled in by us will work too`;
                 betterBecause.innerText= `The ${idEagles} are better than the Chicago Bears.`;
