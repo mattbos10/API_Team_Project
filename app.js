@@ -3,14 +3,14 @@
 var carousel = $(".carousel"),
     currdeg  = 0;
 
-$(".next").on("click", { d: "n" }, rotate);
 $(".prev").on("click", { d: "p" }, rotate);
+$(".next").on("click", { d: "n" }, rotate);
 
 function rotate(e){
-  if(e.data.d=="n"){
+  if(e.data.d=="p"){
     currdeg = currdeg - 72;
   }
-  if(e.data.d=="p"){
+  if(e.data.d=="n"){
     currdeg = currdeg + 72;
   }
   carousel.css({
