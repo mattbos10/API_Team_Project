@@ -3,14 +3,14 @@
 var carousel = $(".carousel"),
     currdeg  = 0;
 
-$(".prev").on("click", { d: "p" }, rotate);
 $(".next").on("click", { d: "n" }, rotate);
+$(".prev").on("click", { d: "p" }, rotate);
 
 function rotate(e){
-  if(e.data.d=="p"){
+  if(e.data.d=="n"){
     currdeg = currdeg - 72;
   }
-  if(e.data.d=="n"){
+  if(e.data.d=="p"){
     currdeg = currdeg + 72;
   }
   carousel.css({
@@ -26,6 +26,7 @@ function rotate(e){
 
 
 // API Pull Coding
+
 const baseURL = `https://www.thesportsdb.com/api/v1/json`;
 const endpointTeam = `/1/searchteams.php?t=`;
 const fullEndpointTeam = baseURL + endpointTeam;
