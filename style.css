@@ -11,7 +11,6 @@
 }
 
 
-
 /* TOP SECTION STYLING */
 
 #topSection {
@@ -225,12 +224,14 @@ box-shadow: 0 1px 0 #999;
   cursor: pointer;
 }
 /* Initial styling of div img for the click on EventListener (so the image from the API will show up ok) */
-#bottomRight {
+#bottomRight, #bottomLeft {
   text-align: center;
 }
-#teamNameRight {
+#teamNameRight, #teamNameLeft {
   max-height: 100%;
   max-width: 100%;
 }
 
-
+li {
+  list-style: none;
+}
