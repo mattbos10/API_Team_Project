@@ -22,3 +22,122 @@ function rotate(e){
 }
 
 // If we decide to add Chicago back or the head coach joke we have to dive degree values (360/6 instead of 360/5 here and in CSS)
+
+
+
+// API Pull Coding
+const baseURL = `https://www.thesportsdb.com/api/v1/json`;
+const endpointTeam = `/1/searchteams.php?t=`;
+const fullEndpointTeam = baseURL + endpointTeam;
+const firstStat = document.querySelector(`#firstStat`);
+const secondStat = document.querySelector(`#secondStat`);
+const thirdStat = document.querySelector(`#thirdStat`);
+const fourthStat = document.querySelector(`#fourthStat`);
+const fifthStat = document.querySelector(`#fifthStat`);
+const teamNameRight = document.querySelector(`#teamNameRight`)
+// Team Lookups
+const idPackers = `Green Bay Packers`;
+const goPackers = document.querySelector(`#click-packers`);
+goPackers.addEventListener(`click`, () => {
+        getTeam = async () => {
+            try {
+                const teamPackers = await axios.get(fullEndpointTeam + idPackers);
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
+                console.log(teamPackers.data);
+                firstStat.innerText=teamPackers.data.teams[0].strTeam;
+                secondStat.innerText=teamPackers.data.teams[0].strStadium;
+                thirdStat.innerText=teamPackers.data.teams[0].strStadiumLocation;
+                fourthStat.innerText=`Whatever we decide on here, pulled from the API...`;
+                fifthStat.innerText=`Or filled in by us will work too`;
+                teamNameRight.src = teamPackers.data.teams[0].strTeamLogo;
+             } catch (err) {
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
+                console.log(err);
+             }
+        }
+        getTeam();
+})
+const idVikings = `Minnesota Vikings`;
+const goVikings = document.querySelector(`#click-vikings`);
+goVikings.addEventListener(`click`, () => {
+        getTeam = async () => {
+            try {
+                const teamVikings = await axios.get(fullEndpointTeam + idVikings);
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
+                console.log(teamVikings.data);
+                firstStat.innerText=teamVikings.data.teams[0].strTeam;
+                secondStat.innerText=teamVikings.data.teams[0].strStadium;
+                thirdStat.innerText=teamVikings.data.teams[0].strStadiumLocation;
+                fourthStat.innerText=`Whatever we decide on here, pulled from the API...`;
+                fifthStat.innerText=`Or filled in by us will work too`;
+                teamNameRight.src = teamVikings.data.teams[0].strTeamLogo;
+             } catch (err) {
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
+                console.log(err);
+             }
+        }
+        getTeam();
+})
+const idLions = `Detroit Lions`;
+const goLions = document.querySelector(`#click-lions`);
+goLions.addEventListener(`click`, () => {
+        getTeam = async () => {
+            try {
+                const teamLions = await axios.get(fullEndpointTeam + idLions);
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
+                console.log(teamLions.data);
+                firstStat.innerText=teamLions.data.teams[0].strTeam;
+                secondStat.innerText=teamLions.data.teams[0].strStadium;
+                thirdStat.innerText=teamLions.data.teams[0].strStadiumLocation;
+                fourthStat.innerText=`Whatever we decide on here, pulled from the API...`;
+                fifthStat.innerText=`Or filled in by us will work too`;
+                teamNameRight.src = teamLions.data.teams[0].strTeamLogo;
+             } catch (err) {
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
+                console.log(err);
+             }
+        }
+        getTeam();
+})
+const idColts = `Indianapolis Colts`;
+const goColts = document.querySelector(`#click-colts`);
+goColts.addEventListener(`click`, () => {
+        getTeam = async () => {
+            try {
+                const teamColts = await axios.get(fullEndpointTeam + idColts);
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
+                console.log(teamColts.data);
+                firstStat.innerText=teamColts.data.teams[0].strTeam;
+                secondStat.innerText=teamColts.data.teams[0].strStadium;
+                thirdStat.innerText=teamColts.data.teams[0].strStadiumLocation;
+                fourthStat.innerText=`Whatever we decide on here, pulled from the API...`;
+                fifthStat.innerText=`Or filled in by us will work too`;
+                teamNameRight.src = teamColts.data.teams[0].strTeamLogo;
+             } catch (err) {
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
+                console.log(err);
+             }
+        }
+        getTeam();
+})
+const idEagles = `Philadelphia Eagles`;
+const goEagles = document.querySelector(`#click-eagles`);
+goEagles.addEventListener(`click`, () => {
+        getTeam = async () => {
+            try {
+                const teamEagles = await axios.get(fullEndpointTeam + idEagles);
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
+                console.log(teamEagles.data);
+                firstStat.innerText=teamEagles.data.teams[0].strTeam;
+                secondStat.innerText=teamEagles.data.teams[0].strStadium;
+                thirdStat.innerText=teamEagles.data.teams[0].strStadiumLocation;
+                fourthStat.innerText=`Whatever we decide on here, pulled from the API...`;
+                fifthStat.innerText=`Or filled in by us will work too`;
+                teamNameRight.src = teamEagles.data.teams[0].strTeamLogo;
+             } catch (err) {
+                console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
+                console.log(err);
+             }
+        }
+        getTeam();
+})
