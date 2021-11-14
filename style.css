@@ -211,12 +211,10 @@ transition: box-shadow 0.1s, top 0.1s;
 top: 204px;
 box-shadow: 0 1px 0 #999;
 }
-.next { right: 1em; }
-.prev { left: 10em; }
+.prev { right: 1em; }
+.next { left: 10em; }
 
 /* Carousel Styling for Bears/
-
-
 
 /* Styling for a-tags in Carousel (for the click on EventListener) */
 .click {
@@ -230,3 +228,5 @@ box-shadow: 0 1px 0 #999;
   max-height: 100%;
   max-width: 100%;
 }
+
+
