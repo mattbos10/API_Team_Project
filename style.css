@@ -254,6 +254,7 @@ border-radius: 5px;
 border-top: 1px solid #FFF;
 box-shadow: 0 5px 0 navy;
 transition: box-shadow 0.1s, top 0.1s;
+margin-top: 20px;
 }
 .next:hover, .prev:hover { color: #000; }
 .next:active, .prev:active {
@@ -284,7 +285,7 @@ li {
 footer {
   margin-top: 20px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
 }
 footer p {
