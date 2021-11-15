@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+
 #pageBackground {
   width: 100vw;
   height: 100vh;
-  background: red;
+  background-image: url(images/Football\ .jpeg); 
+  opacity:;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
 }
 
 
@@ -16,9 +22,9 @@
 #topSection {
   display: flex;
   justify-content: space-between;
-  width: 100vw;
-  height: 40vh;
-  background: green;
+  width: 90vw;
+  height: 30vh;
+  /* background: green; */
 }
 
 #topLeft {
@@ -27,11 +33,21 @@
   left: 10%;
   width: 20%;
   height: 75%;
-  background-color: red;
+  
 }
 #helmetLeft {
-  width: 100%;
-  height: 100%;
+display: block;
+position: absolute;
+background:   #080808;
+width: 350px;
+height: 260px;
+line-height: 200px;
+font-size: 5em;
+text-align: center;
+color: #FFF;
+opacity: 0.85;
+border-radius: 10px;
+padding: 10px;
 }
 
 #topMiddle {
@@ -39,7 +55,7 @@
   top: 10%;
   width: 30%;
   height: 75%;
-  background-color: hotpink;
+  /* background-color: hotpink; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -61,14 +77,15 @@
 #middleSection {
   width: 100vw;
   height: 40vh;
-  background: blue;
+  background:  ;
   line-height: 4em;
+  margin-top: 100px;
 }
 
 #teamLogoLeft {
   width: 85%;
   height: 70%;
-  background: coral;
+  /* background: coral; */
   position: relative;
   left: 5%;
   top: 12%;
@@ -77,7 +94,7 @@
 #teamLogoRight {
   width: 85%;
   height: 70%;
-  background: coral;
+  /* background: coral; */
   position: relative;
   top: 12%;
   right: -10%;
@@ -86,14 +103,18 @@
 #statContainer {
   display: flex;
   width: 97vw;
-  height: 90%;
+  height: 100%;
   margin: auto;
   position: relative;
   top: 5%;
   align-items: center;
   justify-content: space-around;
   background: chartreuse;
+  opacity: .55;
+  border-radius: 10px;
+  padding: 10px;
 }
+
 
 
 
@@ -105,7 +126,7 @@
 #bottomSection {
   width: 100vw;
   height: 20vh;
-  background: yellow;
+  /* background: yellow; */
   display: flex;
   justify-content: space-around;
   overflow: hidden;
@@ -117,7 +138,7 @@
   height: 80%;
   position: relative;
   top: 10%;
-  background: cornflowerblue;
+  /* background: cornflowerblue; */
 }
 
 #bottomMiddle {
@@ -132,7 +153,7 @@
   height: 80%;
   position: relative;
   top: 10%;
-  background: cornflowerblue;
+  /* background: cornflowerblue; */
 }
 
 /* Carousel Styling for Multi-Teams*/
@@ -143,7 +164,7 @@ font: 15px/20px Arial, sans-serif;
 }
 
 .container {
-margin: 0 auto;
+margin:  auto;
 width: 250px;
 height: 200px;
 position: relative;
@@ -156,6 +177,8 @@ width: 100%;
 position: absolute;
 transform-style: preserve-3d;
 transition: transform 1s;
+padding: 25px;
+
 }
 
 .item {
@@ -170,6 +193,7 @@ text-align: center;
 color: #FFF;
 opacity: 0.95;
 border-radius: 10px;
+padding: 10px;
 }
 
 .packers {
@@ -194,14 +218,15 @@ background: #004C54;
 } 
 .bears {
 transform: rotateY(360deg) translateZ(250px);
-background: #0B162A;
+background: #080808;
 }
 
 .next, .prev {
 color: #444;
 position: absolute;
-top: 200px;
-padding: 1em 2em;
+top: 265px;
+padding: .25em 2em;
+opacity: ;
 cursor: pointer;
 background: #CCC;
 border-radius: 5px;
@@ -211,11 +236,11 @@ transition: box-shadow 0.1s, top 0.1s;
 }
 .next:hover, .prev:hover { color: #000; }
 .next:active, .prev:active {
-top: 204px;
+top: 265px;
 box-shadow: 0 1px 0 #999;
 }
-.prev { right: 2em; }
-.next { left: 8em; }
+.prev { right: 5em; }
+.next { left: 15em; }
 
 /* Carousel Styling for Bears/
 
