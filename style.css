@@ -8,8 +8,8 @@
 #pageBackground {
   width: 100vw;
   height: 100vh;
-  background-image: url(images/Football\ .jpeg); 
-  opacity:;
+  background-image: url(Images/Football.jpeg); 
+  /* opacity:; */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -77,7 +77,6 @@ padding: 10px;
 #middleSection {
   width: 100vw;
   height: 40vh;
-  background:  ;
   line-height: 4em;
   margin-top: 100px;
 }
@@ -126,7 +125,7 @@ padding: 10px;
 #bottomSection {
   width: 100vw;
   height: 20vh;
-  /* background: yellow; */
+  background-color: #0006;
   display: flex;
   justify-content: space-around;
   overflow: hidden;
@@ -146,6 +145,7 @@ padding: 10px;
   position: relative;
   top: 45%;
   text-align: center;
+  color: white;
 }
 
 #bottomRight {
@@ -159,7 +159,7 @@ padding: 10px;
 /* Carousel Styling for Multi-Teams*/
 body {
 background: #333;
-padding: 70px 0;
+padding: 0 0 70px 0;
 font: 15px/20px Arial, sans-serif;
 }
 
@@ -260,7 +260,16 @@ box-shadow: 0 1px 0 #999;
 li {
   list-style: none;
 }
-
+/* Footer Styling */
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+footer a {
+  cursor: pointer;
+  color: white;
+}
 
 
 /* This will make them turn their screens if they have them in a portrait orientation. Will will need some other media queries, but this is a start */
