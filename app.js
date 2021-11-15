@@ -72,9 +72,9 @@ goPackers.addEventListener(`click`, () => {
                 firstStat.innerText=teamPackers.data.teams[0].strTeam;
                 secondStat.innerText=teamPackers.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamPackers.data.teams[0].strStadium;
-                fourthStat.innerText=`Highest in the NFC North (nfl.com)`;
+                fourthStat.innerText=`Highest in the NFC North`;
                 fifthStat.innerText=`Likely`;
-                betterBecause.innerText= `The ${idPackers} are better than the Chicago Bears.`;
+                betterBecause.innerText= `The ${idPackers} are definitely better than the Chicago Bears.`;
                 teamNameRight.src = teamPackers.data.teams[0].strTeamLogo;
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
@@ -94,9 +94,9 @@ goVikings.addEventListener(`click`, () => {
                 firstStat.innerText=teamVikings.data.teams[0].strTeam;
                 secondStat.innerText=teamVikings.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamVikings.data.teams[0].strStadium;
-                fourthStat.innerText=`Second in the NFC North (nfl.com)`;
+                fourthStat.innerText=`Second in the NFC North`;
                 fifthStat.innerText=`Likely`;
-                betterBecause.innerText= `The ${idVikings} are better than the Chicago Bears.`;
+                betterBecause.innerText= `The ${idVikings} are definitely better than the Chicago Bears.`;
                 teamNameRight.src = teamVikings.data.teams[0].strTeamLogo;
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
@@ -118,7 +118,7 @@ goLions.addEventListener(`click`, () => {
                 thirdStat.innerText=teamLions.data.teams[0].strStadium;
                 fourthStat.innerText=`Last in the NFC North (nfl.com)`;
                 fifthStat.innerText=`It's a toss up.`;
-                betterBecause.innerText= `The ${idLions} are worse than the Chicago Bears. That's pretty bad.`;
+                betterBecause.innerText= `The ${idLions} are perhaps worse than the Chicago Bears. And that's pretty bad.`;
                 teamNameRight.src = teamLions.data.teams[0].strTeamLogo;
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
@@ -138,9 +138,9 @@ goColts.addEventListener(`click`, () => {
                 firstStat.innerText=teamColts.data.teams[0].strTeam;
                 secondStat.innerText=teamColts.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamColts.data.teams[0].strStadium;
-                fourthStat.innerText=`Second in the AFC South (nfl.com)`;
-                fourthStat.innerText=`Likely`;
-                betterBecause.innerText= `The ${idColts} are better than the Chicago Bears.`;
+                fourthStat.innerText=`Second in the AFC South`;
+                fifthStat.innerText=`Likely`;
+                betterBecause.innerText= `The ${idColts} are definitely better than the Chicago Bears.`;
                 teamNameRight.src = teamColts.data.teams[0].strTeamLogo;
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
@@ -160,9 +160,9 @@ goEagles.addEventListener(`click`, () => {
                 firstStat.innerText=teamEagles.data.teams[0].strTeam;
                 secondStat.innerText=teamEagles.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamEagles.data.teams[0].strStadium;
-                fourthStat.innerText=`Second in the NFC East (nfl.com)`;
+                fourthStat.innerText=`Second in the NFC East`;
                 fifthStat.innerText=`Likely`;
-                betterBecause.innerText= `The ${idEagles} are better than the Chicago Bears.`;
+                betterBecause.innerText= `The ${idEagles} are definitely better than the Chicago Bears.`;
                 teamNameRight.src = teamEagles.data.teams[0].strTeamLogo;
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
