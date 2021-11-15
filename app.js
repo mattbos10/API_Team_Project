@@ -34,7 +34,9 @@ const firstStat = document.querySelector(`#rl1`);
 const secondStat = document.querySelector(`#rl2`);
 const thirdStat = document.querySelector(`#rl3`);
 const fourthStat = document.querySelector(`#rl4`);
+const fifthStat = document.querySelector(`#rl5`);
 const chicago4Stat = document.querySelector(`#ll4`);
+const chicago5Stat = document.querySelector(`#ll5`);
 const teamNameRight = document.querySelector(`#teamNameRight`);
 const betterBecause = document.querySelector(`#betterBecause`);
 
@@ -42,7 +44,8 @@ const betterBecause = document.querySelector(`#betterBecause`);
 const goTransformPage = document.querySelector(`.click`);
 const idBears = `Chicago Bears`;
 goTransformPage.addEventListener(`click`, () => {
-   chicago4Stat.innerText=`Third out of 4 Teams in the NFC North (nfl.com)`;
+   chicago4Stat.innerText=`Only ahead of the 0-8-1 Lions`;
+   chicago5Stat.innerText=`Highly Unlikely`;
    getTeam = async () => {
       try {
           const teamBears = await axios.get(fullEndpointTeam + idBears);
@@ -70,6 +73,7 @@ goPackers.addEventListener(`click`, () => {
                 secondStat.innerText=teamPackers.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamPackers.data.teams[0].strStadium;
                 fourthStat.innerText=`Highest in the NFC North (nfl.com)`;
+                fifthStat.innerText=`Likely`;
                 betterBecause.innerText= `The ${idPackers} are better than the Chicago Bears.`;
                 teamNameRight.src = teamPackers.data.teams[0].strTeamLogo;
              } catch (err) {
@@ -91,6 +95,7 @@ goVikings.addEventListener(`click`, () => {
                 secondStat.innerText=teamVikings.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamVikings.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the NFC North (nfl.com)`;
+                fifthStat.innerText=`Likely`;
                 betterBecause.innerText= `The ${idVikings} are better than the Chicago Bears.`;
                 teamNameRight.src = teamVikings.data.teams[0].strTeamLogo;
              } catch (err) {
@@ -112,6 +117,7 @@ goLions.addEventListener(`click`, () => {
                 secondStat.innerText=teamLions.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamLions.data.teams[0].strStadium;
                 fourthStat.innerText=`Last in the NFC North (nfl.com)`;
+                fifthStat.innerText=`It's a toss up.`;
                 betterBecause.innerText= `The ${idLions} are worse than the Chicago Bears. That's pretty bad.`;
                 teamNameRight.src = teamLions.data.teams[0].strTeamLogo;
              } catch (err) {
@@ -133,6 +139,7 @@ goColts.addEventListener(`click`, () => {
                 secondStat.innerText=teamColts.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamColts.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the AFC South (nfl.com)`;
+                fourthStat.innerText=`Likely`;
                 betterBecause.innerText= `The ${idColts} are better than the Chicago Bears.`;
                 teamNameRight.src = teamColts.data.teams[0].strTeamLogo;
              } catch (err) {
@@ -154,6 +161,7 @@ goEagles.addEventListener(`click`, () => {
                 secondStat.innerText=teamEagles.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamEagles.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the NFC East (nfl.com)`;
+                fifthStat.innerText=`Likely`;
                 betterBecause.innerText= `The ${idEagles} are better than the Chicago Bears.`;
                 teamNameRight.src = teamEagles.data.teams[0].strTeamLogo;
              } catch (err) {
