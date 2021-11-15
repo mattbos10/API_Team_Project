@@ -271,6 +271,9 @@ box-shadow: 0 1px 0 #999;
   cursor: pointer;
 }
 /* Initial styling of div img for the click on EventListener (so the image from the API will show up ok) */
+#betterBecause {
+  font-size: 1.2rem;
+}
 #bottomRight, #bottomLeft {
   text-align: center;
 }
