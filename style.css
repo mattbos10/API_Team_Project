@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
 }
 
 
@@ -9,11 +11,11 @@
   width: 100vw;
   height: 100vh;
   background-image: url(Images/Football.jpeg); 
-  /* opacity:; */
+  opacity: .95;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
- 
+  min-height: 100%;
 }
 
 
@@ -36,18 +38,22 @@
   
 }
 #helmetLeft {
-display: block;
-position: absolute;
-background:   #080808;
-width: 350px;
-height: 260px;
-line-height: 200px;
-font-size: 5em;
-text-align: center;
-color: #FFF;
-opacity: 0.85;
-border-radius: 10px;
-padding: 10px;
+  display: block;
+  position: absolute;
+  background:   transparent;
+  width: 300px;
+  height: auto;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.85;
+  border-radius: 10px;
+  padding: 10px;
+  }
+.tagline {
+  font-size: 30px;
+  color: navy;
 }
 
 #topMiddle {
@@ -101,17 +107,32 @@ padding: 10px;
 
 #statContainer {
   display: flex;
-  width: 97vw;
+  width: 100vw;
   height: 100%;
   margin: auto;
   position: relative;
   top: 5%;
   align-items: center;
   justify-content: space-around;
-  background: chartreuse;
-  opacity: .55;
+  background: #9ec38a99;
+  color: navy;
   border-radius: 10px;
-  padding: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+#statNames {
+  text-align: center;
+  width: 25%;
+}
+
+#leftTeamStats {
+  text-align: left;
+  width: 25%;
+}
+
+#rightTeamStats {
+  text-align: right;
+  width: 25%;
 }
 
 
@@ -146,6 +167,8 @@ padding: 10px;
   top: 45%;
   text-align: center;
   color: white;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 #bottomRight {
@@ -222,16 +245,15 @@ background: #080808;
 }
 
 .next, .prev {
-color: #444;
+color: navy;
 position: absolute;
 top: 265px;
 padding: .25em 2em;
-opacity: ;
 cursor: pointer;
-background: #CCC;
+background: white;
 border-radius: 5px;
 border-top: 1px solid #FFF;
-box-shadow: 0 5px 0 #999;
+box-shadow: 0 5px 0 navy;
 transition: box-shadow 0.1s, top 0.1s;
 }
 .next:hover, .prev:hover { color: #000; }
@@ -263,7 +285,7 @@ li {
 /* Footer Styling */
 footer {
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   color: white;
 }
 footer a {
