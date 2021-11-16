@@ -54,6 +54,7 @@
 .tagline {
   font-size: 30px;
   color: navy;
+  text-shadow: 4px 4px 4px white, 4px 4px 4px orange;
 }
 
 #topMiddle {
@@ -114,8 +115,7 @@
   top: 5%;
   align-items: center;
   justify-content: space-around;
-  background: #9ec38a99;
-  color: navy;
+  background: #9ec38a33;
   border-radius: 10px;
   font-size: 24px;
   text-align: center;
@@ -288,7 +288,9 @@ box-shadow: 0 1px 0 #999;
 }
 /* Initial styling of div img for the click on EventListener (so the image from the API will show up ok) */
 #betterBecause {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 4px 4px 4px navy, 4px 4px 4px orange;
 }
 #bottomRight, #bottomLeft {
   text-align: center;
@@ -299,6 +301,8 @@ box-shadow: 0 1px 0 #999;
 }
 li {
   list-style: none;
+  font-size: 1.6rem;
+  text-shadow: 4px 4px 4px navy, 4px 4px 4px orange;
 }
 /* Footer Styling */
 footer {
