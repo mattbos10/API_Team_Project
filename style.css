@@ -157,7 +157,7 @@
   width: 30%;
   height: 80%;
   position: relative;
-  top: 10%;
+  top: 25%;
   /* background: cornflowerblue; */
 }
 
@@ -167,8 +167,12 @@
   top: 45%;
   text-align: center;
   color: white;
-  font-size: 2rem;
   letter-spacing: 2px;
+}
+#betterBecause {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 4px 4px 4px navy, 4px 4px 4px orange;
 }
 
 #bottomRight {
@@ -183,7 +187,7 @@
 body {
 background: #333;
 padding: 0 0 70px 0;
-font: 15px/20px Arial, sans-serif;
+/* font: 15px/20px Arial, sans-serif; */
 }
 
 .container {
@@ -287,11 +291,6 @@ box-shadow: 0 1px 0 #999;
   cursor: pointer;
 }
 /* Initial styling of div img for the click on EventListener (so the image from the API will show up ok) */
-#betterBecause {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  text-shadow: 4px 4px 4px navy, 4px 4px 4px orange;
-}
 #bottomRight, #bottomLeft {
   text-align: center;
 }
@@ -336,6 +335,25 @@ footer a {
     width: 250px;
     line-height: 200px;
     }
+    #middleSection {
+      line-height: 3em;
+      margin-top: 80px;
+    }
+    .tagline {
+      font-size: 24px;
+    }
+  li {
+      font-size: 1.2rem;
+    }
+  #bottomMiddle {
+    top: 30%;
+  }
+  #betterBecause {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
   /* Carousel Image Styling for Media Query Purposes */
 #packers-logo {
   width: 160px; 
@@ -398,15 +416,32 @@ footer a {
   }
   .prev { right: 4em; }
   .next { left: 12em; }
-  .tagline {
-    font-size: 24px;
-  }
+  
 }
+
 @media (max-width: 1000px){
   #helmetLeft {
     width: 200px;
     line-height: 200px;
     }
+    #middleSection {
+      margin-top: 70px;
+    }
+    .tagline {
+      font-size: 19px;
+    }
+  li {
+      font-size: 1rem;
+    }
+  #bottomMiddle {
+    top: 25%;
+  }
+  #betterBecause {
+    font-size: 1.1rem;
+  }
+  footer {
+    font-size: .8rem;
+  }
   /* Carousel Image Styling for Media Query Purposes */
 #packers-logo {
   width: 128px; 
@@ -458,21 +493,110 @@ footer a {
   .eagles {
   transform: rotateY(288deg) translateZ(160px);
   } 
+  
   .next, .prev {
   top: 160px;
   padding: .16em 1.3em;
   margin-top: 12px;
   }
+  
   .next:hover, .prev:hover { color: #000; }
   .next:active, .prev:active {
   top: 160px;
   }
+  
   .prev { right: 4em; }
   .next { left: 12em; }
-  .tagline {
-    font-size: 19px;
+  
+}
+@media (max-width: 800px){
+  #helmetLeft {
+    width: 160px;
+    line-height: 160px;
+    }
+    #middleSection {
+      line-height: 2em;
+      margin-top: 50px;
+    }
+    .tagline {
+      font-size: 15px;
+    }
+  li {
+      font-size: .8rem;
+    }
+  #bottomMiddle {
+    top: 20%;
   }
-  #statContainer {
-    font-size: 16px;
+  #betterBecause {
+    font-size: 1rem;
   }
+  footer {
+    font-size: .6rem;
+  }
+  /* Carousel Image Styling for Media Query Purposes */
+#packers-logo {
+  width: 102px; 
+  height: 102px;
+}
+#vikings-logo {
+  width: 102px; 
+  height: 92px;
+}
+#lions-logo {
+  width: 102px; 
+  height: 102px;
+}
+#colts-logo {
+    width: 102px; 
+    height: 98px;
+}
+#eagles-logo {
+  width: 102px; 
+  height: 102px;
+}
+  .container {
+  width: 128px;
+  height: 102px;
+  perspective: 512px;
+  }
+  .carousel {
+  padding: 10px;
+  }
+  .item {
+  width: 128px;
+  height: 102px;
+  line-height: 102px;
+  font-size: 4em;
+  padding: 5.2px;
+  }
+  .packers {
+  transform: rotateY(0deg) translateZ(128px);
+  }
+  .vikings {
+  transform: rotateY(72deg) translateZ(128px);
+  }
+  .lions{
+  transform: rotateY(144deg) translateZ(128px);
+  }
+  .colts {
+  transform: rotateY(216deg) translateZ(128px);
+  }
+  .eagles {
+  transform: rotateY(288deg) translateZ(128px);
+  } 
+  
+  .next, .prev {
+  top: 128px;
+  padding: .13em 1em;
+  margin-top: 10px;
+  }
+  
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+  top: 128px;
+  }
+  
+  .prev { right: 3em; }
+  .next { left: 8em; }
+  
 }
