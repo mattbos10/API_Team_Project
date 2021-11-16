@@ -118,7 +118,7 @@ goLions.addEventListener(`click`, () => {
                 thirdStat.innerText=teamLions.data.teams[0].strStadium;
                 fourthStat.innerText=`Last in the NFC North (nfl.com)`;
                 fifthStat.innerText=`It's a toss up.`;
-                betterBecause.innerText= `The ${idLions} are perhaps worse than the Chicago Bears. And that's pretty bad.`;
+                betterBecause.innerText= `The ${idLions} are perhaps worse than the Bears. And that's pretty bad.`;
                 teamNameRight.src = teamLions.data.teams[0].strTeamBanner;
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
