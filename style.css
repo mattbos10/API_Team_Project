@@ -206,7 +206,7 @@ padding: 25px;
 .item {
 display: block;
 position: absolute;
-background: #000;
+/* background: #000; */
 width: 250px;
 height: 200px;
 line-height: 200px;
@@ -220,23 +220,23 @@ padding: 10px;
 
 .packers {
 transform: rotateY(0deg) translateZ(250px);
-background: #203731;
+/* background: #203731; */
 }
 .vikings {
 transform: rotateY(72deg) translateZ(250px);
-background: #4F2683;;
+/* background: #4F2683; */
 }
 .lions{
 transform: rotateY(144deg) translateZ(250px);
-background: #0076B6;
+/* background: #0076B6; */
 }
 .colts {
 transform: rotateY(216deg) translateZ(250px);
-background: #002C5F;
+/* background: #002C5F; */
 }
 .eagles {
 transform: rotateY(288deg) translateZ(250px);
-background: #004C54;
+/* background: #004C54; */
 } 
 
 .next, .prev {
