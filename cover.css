@@ -72,10 +72,10 @@ video {
 #click {
   display: inline-block;
   margin-top: 5px;
-  border: 2px solid navy;
+  border: 2px solid white;
   padding: 10px 30px;
-  background-color: #4b5163;
-  color: navy;
+  background-color: navy;
+  color: white;
   border-radius: 10px;
   font-size: 20px;
   opacity: 0.8;
