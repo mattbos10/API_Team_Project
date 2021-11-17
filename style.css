@@ -329,7 +329,7 @@ footer a {
   }
 }
 
-/* Yeah, yeah, yeah. We know mobile-first, but as this project didn't work so well for mobile, we're going down. */
+/* We know mobile-first, but as this project didn't work so well for mobile, we're going down. */
 @media (max-width: 1200px){
   #helmetLeft {
     width: 250px;
@@ -509,7 +509,8 @@ footer a {
   .next { left: 12em; }
   
 }
-@media (max-width: 800px){
+
+@media (max-width: 825px){
   #helmetLeft {
     width: 160px;
     line-height: 160px;
@@ -599,4 +600,94 @@ footer a {
   .prev { right: 3em; }
   .next { left: 8em; }
   
+}
+@media (max-width: 654px){
+  #helmetLeft {
+    width: 128px;
+    line-height: 128px;
+    }
+    #middleSection {
+      line-height: 1.6em;
+      margin-top: 40px;
+    }
+    .tagline {
+      font-size: 12px;
+    }
+  li {
+      font-size: .6rem;
+    }
+  #bottomMiddle {
+    top: 20%;
+  }
+  #betterBecause {
+    font-size: .8rem;
+  }
+  footer {
+    font-size: .5rem;
+  }
+  /* Carousel Image Styling for Media Query Purposes */
+#packers-logo {
+  width: 82px; 
+  height: 82px;
+}
+#vikings-logo {
+  width: 82px; 
+  height: 75px;
+}
+#lions-logo {
+  width: 82px; 
+  height: 82px;
+}
+#colts-logo {
+    width: 82px; 
+    height: 78px;
+}
+#eagles-logo {
+  width: 82px; 
+  height: 82px;
+}
+  .container {
+  width: 102px;
+  height: 82px;
+  perspective: 410px;
+  }
+  .carousel {
+  padding: 8px;
+  }
+  .item {
+  width: 102px;
+  height: 82px;
+  line-height: 82px;
+  font-size: 3em; 
+  padding: 4.2px;
+  }
+  .packers {
+  transform: rotateY(0deg) translateZ(102px);
+  }
+  .vikings {
+  transform: rotateY(72deg) translateZ(102px);
+  }
+  .lions{
+  transform: rotateY(144deg) translateZ(102px);
+  }
+  .colts {
+  transform: rotateY(216deg) translateZ(102px);
+  }
+  .eagles {
+  transform: rotateY(288deg) translateZ(102px);
+  } 
+  
+  .next, .prev {
+  top: 82px;
+  padding: .1em .8em;
+  margin-top: 8px;
+  }
+  
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+  top: 82px;
+  }
+  
+  .prev { right: 2em; }
+  .next { left: 6em; }
 }
