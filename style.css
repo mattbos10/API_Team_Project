@@ -246,7 +246,7 @@ transform: rotateY(288deg) translateZ(250px);
 .next, .prev {
 color: navy;
 position: absolute;
-top: 265px;
+top: 235px;
 padding: .25em 2em;
 cursor: pointer;
 background: white;
@@ -258,7 +258,7 @@ margin-top: 20px;
 }
 .next:hover, .prev:hover { color: #000; }
 .next:active, .prev:active {
-top: 265px;
+top: 235px;
 box-shadow: 0 1px 0 #999;
 }
 .prev { right: 5em; }
