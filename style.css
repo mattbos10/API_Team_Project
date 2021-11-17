@@ -1,0 +1,693 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Bebas Neue', cursive;
+  color: white;
+}
+
+
+#pageBackground {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(Images/Football.jpeg); 
+  opacity: .95;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+
+/* TOP SECTION STYLING */
+
+#topSection {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 30vh;
+  /* background: green; */
+}
+
+#topLeft {
+  position: relative;
+  top: 10%;
+  left: 10%;
+  width: 20%;
+  height: 75%;
+  
+}
+#helmetLeft {
+  display: block;
+  position: absolute;
+  background:   transparent;
+  width: 300px;
+  height: auto;
+  line-height: 200px;
+  font-size: 5em;
+  text-align: center;
+  color: #FFF;
+  opacity: 0.85;
+  border-radius: 10px;
+  padding: 10px;
+  }
+.tagline {
+  font-size: 30px;
+  color: navy;
+  text-shadow: 4px 4px 4px white, 4px 4px 4px orange;
+}
+
+#topMiddle {
+  position: relative;
+  top: 10%;
+  width: 30%;
+  height: 75%;
+  /* background-color: hotpink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#topRight {
+  position: relative;
+  top: 10%;
+  right: 12%;
+  width: 10%;
+  height: 75%;
+  /* background-color: red; */
+}
+
+
+/* MIDDLE SECTION STYLING */
+
+#middleSection {
+  width: 100vw;
+  height: 40vh;
+  line-height: 4em;
+  margin-top: 100px;
+}
+
+#teamLogoLeft {
+  width: 85%;
+  height: 70%;
+  /* background: coral; */
+  position: relative;
+  left: 5%;
+  top: 12%;
+}
+
+#teamLogoRight {
+  width: 85%;
+  height: 70%;
+  /* background: coral; */
+  position: relative;
+  top: 12%;
+  right: -10%;
+}
+
+#statContainer {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  top: 5%;
+  align-items: center;
+  justify-content: space-around;
+  background: #9ec38a33;
+  border-radius: 10px;
+  font-size: 24px;
+  text-align: center;
+}
+#statNames {
+  text-align: center;
+  width: 25%;
+}
+
+#leftTeamStats {
+  text-align: left;
+  width: 25%;
+}
+
+#rightTeamStats {
+  text-align: right;
+  width: 25%;
+}
+
+
+
+
+
+
+
+/* BOTTOM SECTION STYLING */
+
+#bottomSection {
+  width: 100vw;
+  height: 20vh;
+  background-color: #0006;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+
+}
+
+#bottomLeft {   
+  width: 30%;
+  height: 80%;
+  position: relative;
+  top: 25%;
+  /* background: cornflowerblue; */
+}
+
+#bottomMiddle {
+  width: 30%;
+  position: relative;
+  top: 45%;
+  text-align: center;
+  color: white;
+  letter-spacing: 2px;
+}
+#betterBecause {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-shadow: 4px 4px 4px navy, 4px 4px 4px orange;
+}
+
+#bottomRight {
+  width: 30%;
+  height: 80%;
+  position: relative;
+  top: 10%;
+  /* background: cornflowerblue; */
+}
+
+/* Carousel Styling for Multi-Teams*/
+body {
+background: #333;
+padding: 0 0 70px 0;
+/* font: 15px/20px Arial, sans-serif; */
+}
+
+.container {
+margin:  auto;
+width: 250px;
+height: 200px;
+position: relative;
+perspective: 1000px;
+}
+
+.carousel {
+height: 100%;
+width: 100%;
+position: absolute;
+transform-style: preserve-3d;
+transition: transform 1s;
+padding: 25px;
+}
+
+.item {
+display: block;
+position: absolute;
+/* background: #000; */
+width: 250px;
+height: 200px;
+line-height: 200px;
+font-size: 5em;
+text-align: center;
+color: #FFF;
+opacity: 0.95;
+border-radius: 10px;
+padding: 10px;
+}
+
+.packers {
+transform: rotateY(0deg) translateZ(250px);
+/* background: #203731; */
+}
+.vikings {
+transform: rotateY(72deg) translateZ(250px);
+/* background: #4F2683; */
+}
+.lions{
+transform: rotateY(144deg) translateZ(250px);
+/* background: #0076B6; */
+}
+.colts {
+transform: rotateY(216deg) translateZ(250px);
+/* background: #002C5F; */
+}
+.eagles {
+transform: rotateY(288deg) translateZ(250px);
+/* background: #004C54; */
+} 
+
+.next, .prev {
+color: navy;
+position: absolute;
+top: 265px;
+padding: .25em 2em;
+cursor: pointer;
+background: white;
+border-radius: 5px;
+border-top: 1px solid #FFF;
+box-shadow: 0 5px 0 navy;
+transition: box-shadow 0.1s, top 0.1s;
+margin-top: 20px;
+}
+.next:hover, .prev:hover { color: #000; }
+.next:active, .prev:active {
+top: 265px;
+box-shadow: 0 1px 0 #999;
+}
+.prev { right: 5em; }
+.next { left: 15em; }
+
+/* Carousel Styling for Bears/
+/* Carousel Image Styling for Media Query Purposes */
+#packers-logo {
+  width: 200px; 
+  height: 200px;
+}
+#vikings-logo {
+  width: 200px; 
+  height: 180px;
+}
+#lions-logo {
+  width: 200px; 
+  height: 200px;
+}
+#colts-logo {
+    width: 200px; 
+    height: 190px;
+}
+#eagles-logo {
+  width: 200px; 
+  height: 200px;
+}
+/* Styling for a-tags in Carousel (for the click on EventListener) */
+.click {
+  cursor: pointer;
+}
+/* Initial styling of div img for the click on EventListener (so the image from the API will show up ok) */
+#bottomRight, #bottomLeft {
+  text-align: center;
+}
+#teamNameRight, #teamNameLeft {
+  max-height: 100%;
+  max-width: 100%;
+}
+li {
+  list-style: none;
+  font-size: 1.6rem;
+  text-shadow: 4px 4px 4px navy, 4px 4px 4px orange;
+}
+/* Footer Styling */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+  color: white;
+}
+footer p {
+  margin: 10px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer a {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  color: white;
+}
+
+
+/* This will make them turn their screens if they have them in a portrait orientation. Will will need some other media queries, but this is a start */
+@media only screen and (orientation: portrait) {
+  body {
+    height: 100vw;
+    transform: rotate(90deg);
+  }
+}
+
+/* We know mobile-first, but as this project didn't work so well for mobile, we're going down. */
+@media (max-width: 1200px){
+  #helmetLeft {
+    width: 250px;
+    line-height: 200px;
+    }
+    #middleSection {
+      line-height: 3em;
+      margin-top: 80px;
+    }
+    .tagline {
+      font-size: 24px;
+    }
+  li {
+      font-size: 1.2rem;
+    }
+  #bottomMiddle {
+    top: 30%;
+  }
+  #betterBecause {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 1rem;
+  }
+  /* Carousel Image Styling for Media Query Purposes */
+#packers-logo {
+  width: 160px; 
+  height: 160px;
+}
+#vikings-logo {
+  width: 160px; 
+  height: 144px;
+}
+#lions-logo {
+  width: 160px; 
+  height: 160px;
+}
+#colts-logo {
+    width: 160px; 
+    height: 152px;
+}
+#eagles-logo {
+  width: 160px; 
+  height: 160px;
+}
+  .container {
+  width: 200px;
+  height: 160px;
+  perspective: 800px;
+  }
+  .carousel {
+  padding: 16px;
+  }
+  .item {
+  width: 200px;
+  height: 160px;
+  line-height: 160px;
+  font-size: 5em;
+  padding: 8px;
+  }
+  .packers {
+  transform: rotateY(0deg) translateZ(200px);
+  }
+  .vikings {
+  transform: rotateY(72deg) translateZ(200px);
+  }
+  .lions{
+  transform: rotateY(144deg) translateZ(200px);
+  }
+  .colts {
+  transform: rotateY(216deg) translateZ(200px);
+  }
+  .eagles {
+  transform: rotateY(288deg) translateZ(200px);
+  } 
+  .next, .prev {
+  top: 200px;
+  padding: .20em 1.6em;
+  margin-top: 16px;
+  }
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+  top: 200px;
+  }
+  .prev { right: 4em; }
+  .next { left: 12em; }
+  
+}
+
+@media (max-width: 1000px){
+  #helmetLeft {
+    width: 200px;
+    line-height: 200px;
+    }
+    #middleSection {
+      margin-top: 70px;
+    }
+    .tagline {
+      font-size: 19px;
+    }
+  li {
+      font-size: 1rem;
+    }
+  #bottomMiddle {
+    top: 25%;
+  }
+  #betterBecause {
+    font-size: 1.1rem;
+  }
+  footer {
+    font-size: .8rem;
+  }
+  /* Carousel Image Styling for Media Query Purposes */
+#packers-logo {
+  width: 128px; 
+  height: 128px;
+}
+#vikings-logo {
+  width: 128px; 
+  height: 115px;
+}
+#lions-logo {
+  width: 128px; 
+  height: 128px;
+}
+#colts-logo {
+    width: 128px; 
+    height: 122px;
+}
+#eagles-logo {
+  width: 128px; 
+  height: 128px;
+}
+  .container {
+  width: 160px;
+  height: 128px;
+  perspective: 640px;
+  }
+  .carousel {
+  padding: 12px;
+  }
+  .item {
+  width: 160px;
+  height: 128px;
+  line-height: 128px;
+  font-size: 5em;
+  padding: 6.5px;
+  }
+  .packers {
+  transform: rotateY(0deg) translateZ(160px);
+  }
+  .vikings {
+  transform: rotateY(72deg) translateZ(160px);
+  }
+  .lions{
+  transform: rotateY(144deg) translateZ(160px);
+  }
+  .colts {
+  transform: rotateY(216deg) translateZ(160px);
+  }
+  .eagles {
+  transform: rotateY(288deg) translateZ(160px);
+  } 
+  
+  .next, .prev {
+  top: 160px;
+  padding: .16em 1.3em;
+  margin-top: 12px;
+  }
+  
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+  top: 160px;
+  }
+  
+  .prev { right: 4em; }
+  .next { left: 12em; }
+  
+}
+
+@media (max-width: 825px){
+  #helmetLeft {
+    width: 160px;
+    line-height: 160px;
+    }
+    #middleSection {
+      line-height: 2em;
+      margin-top: 50px;
+    }
+    .tagline {
+      font-size: 15px;
+    }
+  li {
+      font-size: .8rem;
+    }
+  #bottomMiddle {
+    top: 20%;
+  }
+  #betterBecause {
+    font-size: 1rem;
+  }
+  footer {
+    font-size: .6rem;
+  }
+  /* Carousel Image Styling for Media Query Purposes */
+#packers-logo {
+  width: 102px; 
+  height: 102px;
+}
+#vikings-logo {
+  width: 102px; 
+  height: 92px;
+}
+#lions-logo {
+  width: 102px; 
+  height: 102px;
+}
+#colts-logo {
+    width: 102px; 
+    height: 98px;
+}
+#eagles-logo {
+  width: 102px; 
+  height: 102px;
+}
+  .container {
+  width: 128px;
+  height: 102px;
+  perspective: 512px;
+  }
+  .carousel {
+  padding: 10px;
+  }
+  .item {
+  width: 128px;
+  height: 102px;
+  line-height: 102px;
+  font-size: 4em;
+  padding: 5.2px;
+  }
+  .packers {
+  transform: rotateY(0deg) translateZ(128px);
+  }
+  .vikings {
+  transform: rotateY(72deg) translateZ(128px);
+  }
+  .lions{
+  transform: rotateY(144deg) translateZ(128px);
+  }
+  .colts {
+  transform: rotateY(216deg) translateZ(128px);
+  }
+  .eagles {
+  transform: rotateY(288deg) translateZ(128px);
+  } 
+  
+  .next, .prev {
+  top: 128px;
+  padding: .13em 1em;
+  margin-top: 10px;
+  }
+  
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+  top: 128px;
+  }
+  
+  .prev { right: 3em; }
+  .next { left: 8em; }
+  
+}
+@media (max-width: 654px){
+  #helmetLeft {
+    width: 128px;
+    line-height: 128px;
+    }
+    #middleSection {
+      line-height: 1.6em;
+      margin-top: 40px;
+    }
+    .tagline {
+      font-size: 12px;
+    }
+  li {
+      font-size: .6rem;
+    }
+  #bottomMiddle {
+    top: 20%;
+  }
+  #betterBecause {
+    font-size: .8rem;
+  }
+  footer {
+    font-size: .5rem;
+  }
+  /* Carousel Image Styling for Media Query Purposes */
+#packers-logo {
+  width: 82px; 
+  height: 82px;
+}
+#vikings-logo {
+  width: 82px; 
+  height: 75px;
+}
+#lions-logo {
+  width: 82px; 
+  height: 82px;
+}
+#colts-logo {
+    width: 82px; 
+    height: 78px;
+}
+#eagles-logo {
+  width: 82px; 
+  height: 82px;
+}
+  .container {
+  width: 102px;
+  height: 82px;
+  perspective: 410px;
+  }
+  .carousel {
+  padding: 8px;
+  }
+  .item {
+  width: 102px;
+  height: 82px;
+  line-height: 82px;
+  font-size: 3em; 
+  padding: 4.2px;
+  }
+  .packers {
+  transform: rotateY(0deg) translateZ(102px);
+  }
+  .vikings {
+  transform: rotateY(72deg) translateZ(102px);
+  }
+  .lions{
+  transform: rotateY(144deg) translateZ(102px);
+  }
+  .colts {
+  transform: rotateY(216deg) translateZ(102px);
+  }
+  .eagles {
+  transform: rotateY(288deg) translateZ(102px);
+  } 
+  
+  .next, .prev {
+  top: 82px;
+  padding: .1em .8em;
+  margin-top: 8px;
+  }
+  
+  .next:hover, .prev:hover { color: #000; }
+  .next:active, .prev:active {
+  top: 82px;
+  }
+  
+  .prev { right: 2em; }
+  .next { left: 6em; }
+}
