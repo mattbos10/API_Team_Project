@@ -23,11 +23,17 @@ function rotate(e){
 
 // If we decide to add Chicago back or the head coach joke we have to dive degree values (360/6 instead of 360/5 here and in CSS)
 
+// Play Button for Super Bowl Shuffle
+const play = document.querySelector('#click-bears');
+const music = new Audio("Images/super-bowl-shuffle.m4a");
+play.addEventListener(`click`, () => {
+   (music.paused) ? music.play() : music.pause();
+});
 
 
 // API Pull Coding
 const baseURL = `https://www.thesportsdb.com/api/v1/json`;
-const endpointTeam = `/1/searchteams.php?t=`;
+const endpointTeam = `/2/searchteams.php?t=`;
 const fullEndpointTeam = baseURL + endpointTeam;
 const firstStat = document.querySelector(`#rl1`);
 const secondStat = document.querySelector(`#rl2`);
@@ -39,6 +45,7 @@ const chicago5Stat = document.querySelector(`#ll5`);
 const teamNameLeft = document.querySelector(`#teamNameLeft`);
 const teamNameRight = document.querySelector(`#teamNameRight`);
 const betterBecause = document.querySelector(`#betterBecause`);
+// const applause = new Audio("Images/super-bowl-shuffle.m4a");
 
 // The below click was getting interference from the other clicks. We considered a setTimeout, but since the Bears info is static, we added it into the other Teams' clicks.
 // All Click Action (no matter which team is selected):
@@ -123,6 +130,7 @@ goLions.addEventListener(`click`, () => {
          teamNameLeft.src="Images/Chicago Bears/366.png";
          teamNameLeft.alt="Chicago Bears Banner";
          betterBecause.innerText= `The ${idLions} are perhaps worse than the Bears. And that's pretty bad.`;
+	      // applause.play();
         getTeam = async () => {
             try {
                 const teamLions = await axios.get(fullEndpointTeam + idLions);
