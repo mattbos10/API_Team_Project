@@ -26,7 +26,6 @@ function rotate(e){
 
 
 // API Pull Coding
-
 const baseURL = `https://www.thesportsdb.com/api/v1/json`;
 const endpointTeam = `/1/searchteams.php?t=`;
 const fullEndpointTeam = baseURL + endpointTeam;
@@ -37,33 +36,40 @@ const fourthStat = document.querySelector(`#rl4`);
 const fifthStat = document.querySelector(`#rl5`);
 const chicago4Stat = document.querySelector(`#ll4`);
 const chicago5Stat = document.querySelector(`#ll5`);
+const teamNameLeft = document.querySelector(`#teamNameLeft`);
 const teamNameRight = document.querySelector(`#teamNameRight`);
 const betterBecause = document.querySelector(`#betterBecause`);
 
+// The below click was getting interference from the other clicks. We considered a setTimeout, but since the Bears info is static, we added it into the other Teams' clicks.
 // All Click Action (no matter which team is selected):
-const goTransformPage = document.querySelector(`.click`);
-const idBears = `Chicago Bears`;
-goTransformPage.addEventListener(`click`, () => {
-   chicago4Stat.innerText=`Only ahead of the 0-8-1 Lions`;
-   chicago5Stat.innerText=`Highly Unlikely`;
-   getTeam = async () => {
-      try {
-          const teamBears = await axios.get(fullEndpointTeam + idBears);
-          console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
-          console.log(teamBears.data); 
-          teamNameLeft.src = teamBears.data.teams[0].strTeamLogo;
-       } catch (err) {
-          console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
-          console.log(err);
-       }
-  }
-  getTeam();
-})
+// const goTransformPage = document.querySelector(`.click`);
+// const idBears = `Chicago Bears`;
+// goTransformPage.addEventListener(`click`, () => {
+//    chicago4Stat.innerText=`Only ahead of the 0-8-1 Lions`;
+//    chicago5Stat.innerText=`Highly Unlikely`;
+//    getTeam = async () => {
+//       try {
+//           const teamBears = await axios.get(fullEndpointTeam + idBears);
+//           console.log(`Axios Team retrieval from THESPORTSDB.COM API was successful.`);
+//           console.log(teamBears.data); 
+//           teamNameLeft.src = teamBears.data.teams[0].strTeamLogo;
+//        } catch (err) {
+//           console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
+//           console.log(err);
+//        }
+//   }
+//   getTeam();
+// })
 
 // Team Selection Click (With API Pulls)
 const idPackers = `Green Bay Packers`;
 const goPackers = document.querySelector(`#click-packers`);
 goPackers.addEventListener(`click`, () => {
+      chicago4Stat.innerText=`Only ahead of the 0-8-1 Lions`;
+      chicago5Stat.innerText=`Highly Unlikely`;
+      teamNameLeft.src="Images/Chicago Bears/366.png";
+      teamNameLeft.alt="Chicago Bears Banner";
+      betterBecause.innerText= `The ${idPackers} are definitely better than the Chicago Bears.`;
         getTeam = async () => {
             try {
                 const teamPackers = await axios.get(fullEndpointTeam + idPackers);
@@ -72,10 +78,9 @@ goPackers.addEventListener(`click`, () => {
                 firstStat.innerText=teamPackers.data.teams[0].strTeam;
                 secondStat.innerText=teamPackers.data.teams[0].strStadiumLocation;
                 thirdStat.innerText=teamPackers.data.teams[0].strStadium;
-                fourthStat.innerText=`Highest in the NFC North`;
-                fifthStat.innerText=`Likely`;
-                betterBecause.innerText= `The ${idPackers} are definitely better than the Chicago Bears.`;
+                fourthStat.innerText=`Highest in the NFC North`;fifthStat.innerText=`Likely`;
                 teamNameRight.src = teamPackers.data.teams[0].strTeamLogo;
+                teamNameRight.alt = "Green Bay Packers Logo";
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
                 console.log(err);
@@ -86,6 +91,11 @@ goPackers.addEventListener(`click`, () => {
 const idVikings = `Minnesota Vikings`;
 const goVikings = document.querySelector(`#click-vikings`);
 goVikings.addEventListener(`click`, () => {
+         chicago4Stat.innerText=`Only ahead of the 0-8-1 Lions`;
+         chicago5Stat.innerText=`Highly Unlikely`;
+         teamNameLeft.src="Images/Chicago Bears/366.png";
+         teamNameLeft.alt="Chicago Bears Banner";
+         betterBecause.innerText= `The ${idVikings} are definitely better than the Chicago Bears.`;
         getTeam = async () => {
             try {
                 const teamVikings = await axios.get(fullEndpointTeam + idVikings);
@@ -96,8 +106,8 @@ goVikings.addEventListener(`click`, () => {
                 thirdStat.innerText=teamVikings.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the NFC North`;
                 fifthStat.innerText=`Likely`;
-                betterBecause.innerText= `The ${idVikings} are definitely better than the Chicago Bears.`;
                 teamNameRight.src = teamVikings.data.teams[0].strTeamLogo;
+                teamNameRight.alt = "Minnesota Vikings Logo";
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
                 console.log(err);
@@ -108,6 +118,11 @@ goVikings.addEventListener(`click`, () => {
 const idLions = `Detroit Lions`;
 const goLions = document.querySelector(`#click-lions`);
 goLions.addEventListener(`click`, () => {
+         chicago4Stat.innerText=`Only ahead of the 0-8-1 Lions`;
+         chicago5Stat.innerText=`Highly Unlikely`;
+         teamNameLeft.src="Images/Chicago Bears/366.png";
+         teamNameLeft.alt="Chicago Bears Banner";
+         betterBecause.innerText= `The ${idLions} are perhaps worse than the Bears. And that's pretty bad.`;
         getTeam = async () => {
             try {
                 const teamLions = await axios.get(fullEndpointTeam + idLions);
@@ -118,8 +133,8 @@ goLions.addEventListener(`click`, () => {
                 thirdStat.innerText=teamLions.data.teams[0].strStadium;
                 fourthStat.innerText=`Last in the NFC North (nfl.com)`;
                 fifthStat.innerText=`It's a toss up.`;
-                betterBecause.innerText= `The ${idLions} are perhaps worse than the Bears. And that's pretty bad.`;
                 teamNameRight.src = teamLions.data.teams[0].strTeamBanner;
+                teamNameRight.alt = "Detroit Lions Banner";
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
                 console.log(err);
@@ -130,6 +145,11 @@ goLions.addEventListener(`click`, () => {
 const idColts = `Indianapolis Colts`;
 const goColts = document.querySelector(`#click-colts`);
 goColts.addEventListener(`click`, () => {
+         chicago4Stat.innerText=`Only ahead of the 0-8-1 Lions`;
+         chicago5Stat.innerText=`Highly Unlikely`;
+         teamNameLeft.src="Images/Chicago Bears/366.png";
+         teamNameLeft.alt="Chicago Bears Banner";
+         betterBecause.innerText= `The ${idColts} are definitely better than the Chicago Bears.`;
         getTeam = async () => {
             try {
                 const teamColts = await axios.get(fullEndpointTeam + idColts);
@@ -140,8 +160,8 @@ goColts.addEventListener(`click`, () => {
                 thirdStat.innerText=teamColts.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the AFC South`;
                 fifthStat.innerText=`Likely`;
-                betterBecause.innerText= `The ${idColts} are definitely better than the Chicago Bears.`;
                 teamNameRight.src = teamColts.data.teams[0].strTeamLogo;
+                teamNameRight.alt = "Indianapolis Colts Logo";
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
                 console.log(err);
@@ -152,6 +172,11 @@ goColts.addEventListener(`click`, () => {
 const idEagles = `Philadelphia Eagles`;
 const goEagles = document.querySelector(`#click-eagles`);
 goEagles.addEventListener(`click`, () => {
+         chicago4Stat.innerText=`Only ahead of the 0-8-1 Lions`;
+         chicago5Stat.innerText=`Highly Unlikely`;
+         teamNameLeft.src="Images/Chicago Bears/366.png";
+         teamNameLeft.alt="Chicago Bears Banner";
+         betterBecause.innerText= `The ${idEagles} are definitely better than the Chicago Bears.`;
         getTeam = async () => {
             try {
                 const teamEagles = await axios.get(fullEndpointTeam + idEagles);
@@ -162,8 +187,8 @@ goEagles.addEventListener(`click`, () => {
                 thirdStat.innerText=teamEagles.data.teams[0].strStadium;
                 fourthStat.innerText=`Second in the NFC East`;
                 fifthStat.innerText=`Likely`;
-                betterBecause.innerText= `The ${idEagles} are definitely better than the Chicago Bears.`;
                 teamNameRight.src = teamEagles.data.teams[0].strTeamLogo;
+                teamNameRight.alt = "Philadelphia Eagles Logo";
              } catch (err) {
                 console.log(`Axios Team retrieval from THESPORTSDB.COM API was NOT successful.`);
                 console.log(err);
